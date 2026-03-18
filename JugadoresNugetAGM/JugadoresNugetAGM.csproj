@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Nuget de Jugadores extraidos de XML.</Title>
+    <Description>Es un Nuget que trae información de un XML de jugadores.</Description>
+    <PackageIcon>madrid.png</PackageIcon>
+    <PackageTags>agm, xml, jugadores, alonso</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="jugadores.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="jugadores.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="madrid.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
